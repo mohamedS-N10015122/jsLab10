@@ -13,3 +13,11 @@ toString(){
 }
 //todo: add comments
 }
+class PerishableProductProperties extends ProductProperties {
+    constructor(name, price, quantity, expirationDate) {
+        super(name);
+        super(price);
+        super(quantity);
+        this.expirationDate = expirationDate;
+    }
+}
