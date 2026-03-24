@@ -33,6 +33,9 @@ class Store{
     constructor(array) {
         this.array = array
     }
+    addProduct(product){
+        (this.array).push(product)
+    }
 }
 let product1 = new PerishableProductProperties("Apple", 2.99, 10, "December 14, 2026")
 let product2 = new PerishableProductProperties("Banana", 1.99, 10, "March 24, 2027")
