@@ -43,6 +43,15 @@ class Store{
         }
         return Math.round(sum * 100) / 100 // during testing i got "6.970000000000001" from just adding
     }
+    findProductByName(name){
+        let productName = null
+       for (let index = 0; index < this.array.length; index++) {
+        if (this.array[index].name == name){
+            productName = this.array[index]
+        }
+       }
+       return productName
+    }
 }
 let product1 = new PerishableProductProperties("Apple", 2.99, 10, "December 14, 2026")
 let product2 = new PerishableProductProperties("Banana", 1.99, 10, "March 24, 2027")
