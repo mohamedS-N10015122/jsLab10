@@ -36,6 +36,13 @@ class Store{
     addProduct(product){
         (this.array).push(product)
     }
+    getInventoryValue(){
+        let sum = 0.0
+        for (let index = 0; index < this.array.length; index++) {
+            sum += (this.array[index].price)
+        }
+        return Math.round(sum * 100) / 100 // during testing i got "6.970000000000001" from just adding
+    }
 }
 let product1 = new PerishableProductProperties("Apple", 2.99, 10, "December 14, 2026")
 let product2 = new PerishableProductProperties("Banana", 1.99, 10, "March 24, 2027")
