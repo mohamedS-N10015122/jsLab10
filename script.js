@@ -55,3 +55,6 @@ class Store{
 }
 let product1 = new PerishableProductProperties("Apple", 2.99, 10, "December 14, 2026")
 let product2 = new PerishableProductProperties("Banana", 1.99, 10, "March 24, 2027")
+let product3 = new PerishableProductProperties("Grape", 2.29, 10, "January 5, 2027")
+let product4 = new PerishableProductProperties("Kiwi", 3.49, 10, "June 4, 2028")
+let product5 = new PerishableProductProperties("Orange", 4.99, 10, "April 1, 2027")
