@@ -6,19 +6,19 @@ class ProductProperties {
 
     }
 getTotalValue(){
-    return this.price*this.quantity;
+    return this.price*this.quantity; // returns value as price*quantity
 }
 toString(){
-    return "Product: " + this.name + ", Price: " + this.price + ", Quantity: " + this.quantity;
+    return "Product: " + this.name + ", Price: " + this.price + ", Quantity: " + this.quantity; // returns what an object has
 }
-static applyDiscount(products, discount){
+static applyDiscount(products, discount){ // this method adds a discount to a product
     let tempObj;
     for (let index = 0; index < products.length; index++) {
     tempObj = products[index];
     tempObj.price = (tempObj.price * discount)
     }
 }
-//todo: add comments
+
 }
 class PerishableProductProperties extends ProductProperties {
     constructor(name, price, quantity, expirationDate) {
