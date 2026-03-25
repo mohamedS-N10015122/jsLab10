@@ -20,12 +20,12 @@ static applyDiscount(products, discount){ // this method adds a discount to a pr
 }
 
 }
-class PerishableProductProperties extends ProductProperties {
+class PerishableProductProperties extends ProductProperties { // this class extends from before and adds expiration date
     constructor(name, price, quantity, expirationDate) {
         super(name,price,quantity);
         this.expirationDate = expirationDate;
     }
-    toString(){
+    toString(){ // this returns what the objects has
     return "Product: " + this.name + ", Price: " + this.price + ", Quantity: " + this.quantity + ", Expiration Date: " + this.expirationDate;
 }
 }
