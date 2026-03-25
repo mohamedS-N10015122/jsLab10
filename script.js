@@ -33,10 +33,10 @@ class Store{
     constructor(array) {
         this.array = array
     }
-    addProduct(product){
+    addProduct(product){ // ths adds a product to a store
         (this.array).push(product)
     }
-    getInventoryValue(){
+    getInventoryValue(){ // this gets the whole inventory value of an array of products
         let sum = 0.0
         let value = 0
         for (let index = 0; index < this.array.length; index++) {
@@ -45,11 +45,11 @@ class Store{
         }
         return Math.round(sum * value * 100) / 100 // during testing i got "6.970000000000001" from just adding
     }
-    findProductByName(name){
+    findProductByName(name){ // this method gets product that match the name
         let productName = null
        for (let index = 0; index < this.array.length; index++) {
         if (this.array[index].name == name){
-            productName = this.array[index]
+            productName = this.array[index] // i just noticed that this overwrites instead of adding
         }
        }
        return productName
