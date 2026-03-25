@@ -59,3 +59,4 @@ let product3 = new PerishableProductProperties("Grape", 2.29, 10, "January 5, 20
 let product4 = new PerishableProductProperties("Kiwi", 3.49, 10, "June 4, 2028")
 let product5 = new PerishableProductProperties("Orange", 4.99, 10, "April 1, 2027")
 let store = new Store([product1,product2,product3,product4,product5])
+console.log(store.getInventoryValue() * 0.85)
