@@ -1,8 +1,8 @@
 class ProductProperties {
     constructor(name, price, quantity) {
-        this.name = name;
-        this.price = price
-        this.quantity = quantity;
+        this.name = name; // name of the product
+        this.price = price // price of the product
+        this.quantity = quantity; // quantity of the product
 
     }
 getTotalValue(){
@@ -38,10 +38,12 @@ class Store{
     }
     getInventoryValue(){
         let sum = 0.0
+        let value = 0
         for (let index = 0; index < this.array.length; index++) {
             sum += (this.array[index].price)
+            value += (this.array[index].quantity)
         }
-        return Math.round(sum * 100) / 100 // during testing i got "6.970000000000001" from just adding
+        return Math.round(sum * value * 100) / 100 // during testing i got "6.970000000000001" from just adding
     }
     findProductByName(name){
         let productName = null
